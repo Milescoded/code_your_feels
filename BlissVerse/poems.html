@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a id="title" class="navbar-brand" href="#">BlissVerse</a>
+      <i id="heart" class='bx bxs-heart'></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div  class="collapse navbar-collapse" id="nav">
+        <div class="navbar-nav">
+          <a id="nav-link" class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a id="nav-link" class="nav-link active" aria-current="page" href="poems.html">Poems</a>
+
+          <button id="contact" type="button" class="btn btn-outline-secondary btn-md px-4">Contact</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      
+      <div class="container">
+        <div class="row">
+            <div class="col"><h2 class="header">Welcome to BlissVerse poems !</h2></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="poem-intro">
+                    We generate a poem based on how you feel today. We want to create a comforting atmosphere for sad souls and a 
+                    joyful mood for those feeling good. Simply give us your name and select on the mood you are in right now and we generate a poem for you
+                </p>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="poem-intro">
+                            My name is <input id="myname" type="text">   and am feeling 
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <button id="happybtn"  class="btn btn-success" onclick="myFunction()">Happy &#128512;</button>
+                        <button id="anxiousbtn" type="button" class="btn btn-primary" onclick="myFunction()">Anxious &#128543;</button>
+                        <button id="depressionbtn" type="button" class="btn btn-danger" onclick="myFunction()">Depressed &#128532;</button>
+                        <button id="emptybtn" type="button" class="btn btn-warning" onclick="myFunction()">Empty &#128546;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+        
+          <!-- Main poem file -->
+            <div id="poems" class="col-6 h-100">
+                <h4 class="m-4">Hi <span id="display-name">,</span></h4>
+                
+                <!-- happy poem -->
+
+                <p id="happy"><i>
+                  You are a beacon of light so true, <br>
+                  A soul that radiates warmth like morning dew. <br>
+                  In your presence, happiness takes flight, <br>
+                  A guiding star through life's darkest night. <br><br>
+                  
+                  With a smile that brightens the gloomiest day, <br>
+                  Your heart, a flame that never tires. <br>
+                  Your spirit uplifts and inspires, <br>
+                  In your embrace, troubles find relent. <br><br>
+
+                  You bring comfort and joy in every way. <br>
+                  Your laughter, like music, lifts spirits high, <br>
+                  With kindness and grace, you touch hearts nigh. <br>
+                  May life's blessings forever shine on your path.<br>
+                </i></p>
+
+
+                <!-- Anxious poem -->
+                
+                <p id="anxious"><i>
+                  To the anxious soul, with a tender heart, <br>
+                  I see your struggle, though it may be hard. <br>
+                  In a world of worry, where thoughts run deep, <br>
+                  But fear not, dear one, for you are strong,<br>
+                  You navigate a maze, seeking solace to keep. <br><br>
+                  
+                  So, anxious soul, hold on to hope's embrace,<br>
+                  In time, serenity will find its place. <br>
+                  Reach out your hand, let others lend support. <br>
+                  Believe in your resilience, your spirit's might, <br>
+                  And emerge from anxiety's grip into radiant light.<br>
+                </i></p>
+
+
+                 <!-- depression poem -->
+                
+                 <p id="depression"><i>
+                    To the weary heart, burdened and blue, <br>
+                    I see the shadows that surround you, <br>
+                    Remember, dear one, that healing has begun. <br>
+                    In moments of despair, when hope feels far, <br>
+                    Know that you are cherished just as you are. <br>
+                    In the depths of darkness, you may reside, <br>
+                    But within you, a flicker of light abides. <br><br>
+                    
+                    So, dear one, hold on to the flame within,<br>
+                    Seek solace in gentle whispers of grace, <br>
+                    Let it guide you through darkness, to begin <br>
+                    Through the storm, you'll find strength anew, <br>
+                    And brighter days will soon break through. <br>
+                    A chapter of healing, of self-discovery, <br>
+                    Where your spirit soars, unburdened and free.<br>
+                  </i></p>
+
+                   <!-- empty poem -->
+                
+                <p id="empty"><i>
+                    To the empty vessel, longing for more, <br>
+                    I sense the void that you can't ignore. <br>
+                    In the depths of emptiness, you reside, <br>
+                    But within you, dormant passions hide. <br><br>
+                    
+                    Though you may feel hollow, lost and detached,<br>
+                    There's a spark within you, waiting to be matched. <br>
+                    In the silence, listen closely to your soul's plea, <br>
+                    For it holds the key to set you free. <br><br>
+
+                    So, dear one, don't despair in this empty space,<br>
+                    Embrace the opportunity to find your grace.<br>
+                    Discover the passions that light your way, <br>
+                    And watch as emptiness gives rise to a brand-new day. <br>
+                  </i></p>
+                
+            </div>
+
+            <!-- End of poem section -->
+
+            <div class="col-1"></div>
+
+            <div class="col-5">
+              <img src="images/poem.jpg" alt="" width="500px" height="430px">
+            </div>
+        </div>
+      </div>
+
+
+       <!-- Footer -->
+
+       <div class="container">
+        <h2 class="pb-2 border-bottom">Contact Us </h2>
+
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Tel. No</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class=" fw-bold nav-link p-0 text-body-secondary">0718074023</a></li>
+                <li class="nav-item mb-2"><a href="#" class="fw-bold nav-link p-0 text-body-secondary">0753422466</a></li>
+                
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Email Address</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="fw-bold nav-link p-0 text-body-secondary">collinsabaya07@gmail.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="fw-bold nav-link p-0 text-body-secondary">collinsnyakoe07@gmail.com</a></li>
+               
+              </ul>
+            </div>
+      
+          
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button id="subscribe" class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 BlissVerse, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    
+
+      <script src="index.js"></script>
+</body>
+</html>
