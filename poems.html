@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a id="title" class="navbar-brand" href="#">BlissVerse</a>
+      <i id="heart" class='bx bxs-heart'></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div  class="collapse navbar-collapse" id="nav">
+        <div class="navbar-nav">
+          <a id="nav-link" class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a id="nav-link" class="nav-link active" aria-current="page" href="poems.html">Poems</a>
+
+          <button id="contact" type="button" class="btn btn-outline-secondary btn-md px-4">Contact</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      
+      <div class="container">
+        <div class="row">
+            <div class="col"><h2 class="header">Welcome to BlissVerse poems !</h2></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="poem-intro">
+                    We generate a poem based on how you feel today. We want to create a comforting atmosphere for sad souls and a 
+                    joyful mood for those feeling good. Simply give us your name and select on the mood you are in right now and we generate a poem for you
+                </p>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="poem-intro">
+                            My name is <input id="myname" type="text">   and am feeling 
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <button id="happybtn"  class="btn btn-success" onclick="myFunction()">Happy</button>
+                        <button id="anxiousbtn" type="button" class="btn btn-primary" onclick="myFunction()">Anxious !</button>
+                        <button type="button" class="btn btn-danger" onclick="myFunction()">Depressed !</button>
+                        <button type="button" class="btn btn-warning" onclick="myFunction()">Empty !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+        
+          <!-- Main poem file -->
+            <div id="poems" class="col-6 h-100">
+                <h4 class="m-4">Hi <span id="display-name">,</span></h4>
+                
+                <!-- happy poem -->
+
+                <p id="happy"><i>
+                  You are a beacon of light so true, <br>
+                  A soul that radiates warmth like morning dew. <br>
+                  In your presence, happiness takes flight, <br>
+                  Your spirit uplifts and inspires, <br>
+                  A guiding star through life's darkest night. <br><br>
+                  
+                  You bring comfort and joy in every way. <br>
+                  Your laughter, like music, lifts spirits high, <br>
+                  With kindness and grace, you touch hearts nigh. <br>
+                  In your embrace, troubles find relent. <br>
+                  May life's blessings forever shine on your path,<br>
+                </i></p>
+
+
+                <!-- Anxious poem -->
+                
+                <p id="anxious"><i>
+                  To the anxious soul, with a tender heart, <br>
+                  I see your struggle, though it may be hard. <br>
+                  In a world of worry, where thoughts run deep, <br>
+                  But fear not, dear one, for you are strong,<br>
+                  You navigate a maze, seeking solace to keep. <br><br>
+                  
+                  So, anxious soul, hold on to hope's embrace,<br>
+                  In time, serenity will find its place. <br>
+                  Reach out your hand, let others lend support. <br>
+                  Believe in your resilience, your spirit's might, <br>
+                  And emerge from anxiety's grip into radiant light.<br>
+                </i></p>
+                
+            </div>
+
+            <!-- End of poem section -->
+
+            <div class="col-1"></div>
+
+            <div class="col-5">
+              <img src="/images/poem.jpg" alt="" width="500px">
+            </div>
+        </div>
+      </div>
+    
+
+      <script src="index.js"></script>
+</body>
+</html>
