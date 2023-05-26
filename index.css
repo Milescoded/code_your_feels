@@ -160,6 +160,11 @@ h3{
     color:#fff;
 }
 
+#poem-page{
+    text-align: center;
+    font-size: 25px;
+}
+
 
     /* Poems page */
     #poems{
@@ -171,7 +176,7 @@ h3{
         margin-bottom: 5%;
     }
 
-#happy, #anxious{
+#happy, #anxious, #depression, #empty{
     font-size: 19px;
     display: none;
 }    
