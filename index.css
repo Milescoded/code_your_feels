@@ -1,0 +1,177 @@
+#nav{
+    font-weight: bold;
+  
+    margin-left: 45%;
+}
+#heart{
+    color: white;
+    font-size: 50px;
+}
+#contact{
+    margin-left: 35%;
+    border: 2px solid #000C40;
+    color: #000C40;
+}
+#contact:hover{
+    color: white;
+    background-color: #000C40;
+}
+#title{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 3%;
+}
+#nav-link{
+    color: rgb(248, 224, 193);
+    font-size: 20px;
+    margin-left: 15%;
+}
+#nav-link:hover{
+    color: black;
+
+}
+#navbar{
+    background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#button{
+    background-color: #313b69;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+#button2{
+    background-color: #000C40;
+    border: none;
+    color: white;
+}
+h3{
+    color: #000C40;
+    text-align: start;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#more{
+    color: #000C40;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}
+.continuation{
+    display: none;
+}
+#button2{
+    display: none;
+}
+
+
+.header{
+    margin-top: 3%;
+    font-weight: bold;
+    color: #000C40;
+}
+.poem-intro{
+    font-size: 20px;
+    font-weight: 70;
+}
+
+#hero-description{
+    color: #000C40;
+}
+#blissverse{
+    font-family: bold;
+}
+
+
+/* mind matters */
+.p1, .p2{
+    margin-left: 3%;
+    font-size: 17px;
+}
+.txt_view {
+    overflow:hidden;
+    position:relative;
+    width:978px;
+    height:300px;
+    border:2px solid #000C40;
+    background-color:#fff;
+     box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.actionTxtType5 {
+    position:relative;
+    padding:40px 0;
+    height:100%;
+    border-top:none;
+    background-color:#fff;
+    text-align:center;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.actionTxtType5:after {
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:0;
+    display:block;
+    content:'';
+    height:100%;
+    width:5px;
+    background-color:#000C40;
+    transition:width .45s;
+    -webkit-transition:width .45s;
+    -moz-transition:width .45s;
+}
+.actionTxtType5:hover:after {
+    width:100%;
+}
+.actionTxtType5 .view_tit{
+    position:relative;
+     z-index:10;
+    font-size:30px;
+    line-height:35px;
+    text-transform:uppercase;
+    font-weight:700;
+    padding-bottom:20px;
+    text-shadow:1px 1px 10px rgba(68,68,68,0.4);
+    transition:all .7s;
+    -webkit-transition:all .7s;
+    -moz-transition:all .7s;
+}
+.actionTxtType5 .view_txt {
+    position:relative;
+    z-index:10;
+    transition:color .7s;
+    -webkit-transition:color .7s;
+    -moz-transition:color .7s;
+}
+.actionTxtType5:hover .view_tit {
+    color:#fff;
+    text-shadow:1px 1px 10px rgba(255,255,255,0.4);
+}
+.actionTxtType5:hover .view_txt {
+    color:#fff;
+}
+
+
+    /* Poems page */
+    #poems{
+        border: 1px solid #000C40;
+        padding: 3%;
+        margin-top: 2%;
+        border-radius: 0px 70px;
+        box-shadow: #6a75a7 0px 30px 60px -12px inset, #364485 0px 18px 36px -18px inset;
+        margin-bottom: 5%;
+    }
+
+#happy, #anxious{
+    font-size: 19px;
+    display: none;
+}    
