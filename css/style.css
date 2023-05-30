@@ -59,24 +59,54 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    padding: 2.5rem;
+
 }
 
 header h1{
     color: aliceblue;
 }
+
+header a{
+  text-decoration: none;
+  color: aliceblue;
+
+}
+
 ul{
     display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
     color:white;
-    gap: 1rem;
+    gap: .8rem;
+    font-size: 1.2rem;
 }
 
 
 #display{
     width: 100%;
     height: 100vh;
+}
+
+
+@media (max-width: 700px) {
+  header{
+    display: flex;
+    align-items: flex-start;
+  }
+  ul {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    position: relative;
+}
 }
