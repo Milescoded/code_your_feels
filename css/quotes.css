@@ -10,12 +10,12 @@ body {
   font-weight: 800;
   font-family: "Manrope", sans-serif;
   height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
   background-color: hsl(218deg, 23%, 16%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #advice {
@@ -29,6 +29,7 @@ body {
   padding: 2rem;
   position: relative;
   line-height: 2.8rem;
+  margin: 10rem;
 }
 #advice #counter {
   font-size: 12px;
@@ -75,4 +76,26 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 20px;
+}
+header ul{
+  display: flex;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color:white;
+  gap: .8rem;
+  font-size: 1.2rem;
 }
