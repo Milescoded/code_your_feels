@@ -61,18 +61,17 @@ header{
     align-items: center;
     width: 80%;
     margin: auto;
-    padding: 2.5rem;
+    padding: 1rem;
 
 }
 
 header h1{
-    color: aliceblue;
+  color: hsl(150deg, 100%, 66%);
 }
 
 header a{
   text-decoration: none;
-  color: aliceblue;
-
+  color: hsl(150deg, 100%, 66%);
 }
 
 ul{
@@ -93,7 +92,7 @@ ul{
 }
 
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   header{
     display: flex;
     align-items: flex-start;
@@ -109,4 +108,4 @@ ul{
     color: black;
     position: relative;
 }
-}
+} */

@@ -3,6 +3,7 @@ const numberOfBreaths = document.querySelector(".breath-input");
 const start = document.querySelector(".start");
 const instructions = document.querySelector(".instructions");
 const breathsText = document.querySelector(".breaths-text");
+const count = document.querySelector(".countdown");
 let breathsLeft = 3;
 
 // Watching for selected breaths from user
@@ -19,6 +20,8 @@ const growCircle = () => {
   }, 8000);
 };
 
+
+
 // Breathing Instructions
 const breathTextUpdate = () => {
   breathsLeft--;
@@ -28,8 +31,8 @@ const breathTextUpdate = () => {
     instructions.innerText = "Hold Breath";
     setTimeout(() => {
       instructions.innerText = "Exhale Breath Slowly";
-    }, 4000);
-  }, 4000);
+    }, 6000);
+  }, 5000);
 };
 
 // Breathing App Function
@@ -45,7 +48,7 @@ const breathingApp = () => {
     }
     growCircle();
     breathTextUpdate();
-  }, 12000);
+  }, 8000);
 };
 
 // Start Breathing
@@ -55,9 +58,24 @@ start.addEventListener("click", () => {
   setTimeout(() => {
     instructions.innerText = "Breathing is about to begin...";
     setTimeout(() => {
-      breathingApp();
-      growCircle();
-      breathTextUpdate();
-    }, 2000);
-  }, 2000);
+      count.innerText = "3";
+      setTimeout(() => {
+        count.innerText = "2";
+        setTimeout(() => {
+          count.innerText = "1";
+          setTimeout(() => {
+            count.innerText = "0";
+            setTimeout(() => {
+              breathingApp();
+              growCircle();
+              breathTextUpdate();
+          }, 4000);
+    }, 4000);
+    
+    }, 4000);
+
+    }, 4000);
+  
+    },4000);
+  }, 4000);
 });
